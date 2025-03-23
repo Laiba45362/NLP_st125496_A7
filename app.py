@@ -57,8 +57,8 @@ def main():
     st.write("Using the Odd-Layer Distilled Model (Test Accuracy: 0.9660)")
 
     # Paths (absolute for local testing)
-    model_path = r"C:\Users\HP\Downloads\nlp_a7-main\nlp_a7-main\student_odd.pth"
-    tokenizer_path = r"C:\Users\HP\Downloads\nlp_a7-main\nlp_a7-main"
+    model_path = r"C:\Users\acer\Downloads\NLP_st125496_A7-main\NLP_st125496_A7-main\student_odd.pth"
+    tokenizer_path = r"C:\Users\acer\Downloads\NLP_st125496_A7-main\NLP_st125496_A7-main"
 
     # Load model and tokenizer using Factory pattern
     try:
@@ -81,7 +81,7 @@ def main():
     # Try to load performance plot
     try:
         st.subheader("Model Performance")
-        plot_path = r"C:\Users\HP\Downloads\nlp_a7-main\nlp_a7-main\download (9).png"
+        plot_path = r"C:\Users\acer\Downloads\NLP_st125496_A7-main\NLP_st125496_A7-main\graph.png"
         st.image(plot_path, caption="Training Loss and Eval Accuracy (Laiba's Work)")  # Attribution to Laiba
     except FileNotFoundError:
         st.write("Performance plot not available. Expected file: 'download (9).png'")
